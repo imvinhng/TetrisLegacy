@@ -222,6 +222,8 @@ document.addEventListener('keydown', event => {
         playerRotate(-1);
     } else if (event.keyCode === 87) {
         playerRotate(1);
+    } else if (event.keyCode === 32) {
+        alert("PAUSE MENU");
     }
 });
 
