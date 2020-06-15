@@ -7,8 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="score"></div>
-    <canvas id="tetris" width="240" height="400"></canvas>
-    <script src="main.js"></script>
+    <div id="menu">
+        <div >
+          <h2>Rules</h2>
+          <p class="rules"> Please use the <b class="key">Q or W</b> to rotate your tetromino, and <b class="key">LEFT</b>
+            and <b class="key">RIGHT</b> to <br> move across the board. Pressing <b class="key">DOWN</b> will speed up the
+            tetromino.</p>
+            <p class="rules"> Press the <b class="key">SPACEBAR</b> anytime to pause the game </p>
+          <button id="startGame" >Start Game</button>
+        </div>
+      </div>
+    </div>
+    <div id='gameplay'>
+        <div id="score"></div>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <script src="main.js"></script>
+    </div>
 </body>
 </html>

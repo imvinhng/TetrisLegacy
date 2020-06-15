@@ -3,6 +3,10 @@ const context = canvas.getContext('2d');
 
 context.scale(20, 20);
 
+document.querySelector('#startGame').addEventListener('click', () => {
+        document.getElementById('menu').style.display = 'none';
+        document.getElementById('gameplay').style.display = 'block';
+})
 function arenaSweep() {
     let rowCount = 1;
     outer: for (let y = arena.length -1; y > 0; --y) {
@@ -221,7 +225,9 @@ document.addEventListener('keydown', event => {
     } else if (event.keyCode === 81) {
         playerRotate(-1);
     } else if (event.keyCode === 87) {
-        playerRotate(1);
+        playerRotate(1);``
+    } else if (event.keyCode === 32) {
+        alert("PAUSE MENU");
     }
 });
 
